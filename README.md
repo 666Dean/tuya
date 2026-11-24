@@ -6,17 +6,17 @@
 
 ## 下载与更新公告
 
-当前正式版为 **图丫 3.1.0 独立版**。
+当前正式版为 **图丫 3.1.1 独立版**。
 
-- [下载 Windows 安装包](https://github.com/666Dean/tuya/releases/download/v3.1.0/Tuya-3.1.0-Windows11-x64-AVX2-Setup.exe)
-- [3.1.0 更新公告与验收说明](https://github.com/666Dean/tuya/releases/tag/v3.1.0)
-- [SHA-256 校验文件](https://github.com/666Dean/tuya/releases/download/v3.1.0/SHA256SUMS.txt)
+- [下载 Windows 安装包](https://github.com/666Dean/tuya/releases/download/v3.1.1/Tuya-3.1.1-Windows11-x64-AVX2-Setup.exe)
+- [3.1.1 更新公告与验收说明](https://github.com/666Dean/tuya/releases/tag/v3.1.1)
+- [SHA-256 校验文件](https://github.com/666Dean/tuya/releases/download/v3.1.1/SHA256SUMS.txt)
 - [查看所有版本](https://github.com/666Dean/tuya/releases)
 
-3.1.0 统一七个页面的视觉设计和应用外壳，新增紧凑导航、可调信息栏、多选操作栏、真实筛选菜单、拖放导入确认和减少动画设置，并保留现有原生业务。
+3.1.1 修复恢复照片信息栏 EXIF 展开状态后可能发生的启动闪退。照片信息栏、滚动、动画和预览功能继续保留，第三方依赖版本和图库结构保持一致。
 
 系统要求：Windows 11 x64，支持 AVX2 的 Intel 或 AMD 处理器。
 
-正常关闭图丫后运行安装程序。升级保留已有照片位置、个人索引与设置。支持更新检查的版本可在“设置 → 软件更新”查看公告和下载入口；没有更新检查功能的旧版本需要先手动安装新版。
+正常关闭图丫后运行安装程序。升级保留已有照片位置、个人索引与设置。因闪退无法进入软件时，可以直接安装本版本。支持更新检查的版本可在“设置 → 软件更新”查看公告和下载入口；没有更新检查功能的旧版本需要先手动安装新版。
 
-本轮完成隔离安装、重装、卸载和旧版升级测试；不同缩放检查不等同于物理显示器间 DPI 切换或所有设备的帧率保证。详细验证范围见 Release 附件。第三方许可证和适用源码材料随安装包分发。
+本轮通过 7 组 CTest（界面 31 项）、Windows 原生启动回归、150%/200% 缩放专项、隔离安装/重装/卸载 18 项、旧版升级 15 项和大图库重复启动检查。短时回归不等同于长期运行或物理显示器间 DPI 切换验证，详细范围见 Release 附件。第三方许可证和适用源码材料随安装包分发。
